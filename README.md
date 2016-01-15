@@ -31,5 +31,5 @@ curl http://localhost:3000/api/test | jq
 }
 ```
 
-Look at https://github.com/andrewarrow/bug_jan_14/blob/master/app/models/thing.rb as_json method. Do you see the bug?
+Look at https://github.com/andrewarrow/bug_jan_14/blob/master/app/models/thing.rb as_json method. Do you see the bug? Why is name an array vs. just "Robert"?
 
