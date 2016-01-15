@@ -1,3 +1,12 @@
+Seed the db with:
+
+```
+User.create(name: 'Robert', display_name: 'Bob')
+Thing.create(name: 'Thing1', flavor: 'Ruby', magic_number: 15, user_id: 1)
+```
+
+And then run `curl` piped to `jq`:
+
 ```
 curl http://localhost:3000/api/test | jq
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
@@ -21,3 +30,6 @@ curl http://localhost:3000/api/test | jq
   ]
 }
 ```
+
+Look at app/models/thing.rb as_json method. Do you see the bug?
+
